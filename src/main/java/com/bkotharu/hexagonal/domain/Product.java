@@ -52,6 +52,14 @@ public class Product implements Serializable {
 		this.description = description;
 	}
 
+	public Product(Integer id, String name, String type, String description) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.type = type;
+		this.description = description;
+	}
+
 	@Override
 	public String toString() {
 		return "Product [id=" + id + ", name=" + name + ", type=" + type + ", description=" + description + "]";

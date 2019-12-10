@@ -1,18 +1,18 @@
-package com.bkotharu.hexagonal.service;
+package com.bkotharu.hexagonal.ports;
 
 import java.util.List;
 
 import com.bkotharu.hexagonal.domain.Product;
 
 /**
- * Core Business Logic exposed through a service.
+ * Outbound Port
  * 
  * @author bhargavakotharu
  *
  */
-public interface IProductService {
+public interface IProductRepository {
 
-	public Product getProduct(Integer id);
+	public Product getProductById(Integer id);
 
 	public List<Product> getProducts();
 
