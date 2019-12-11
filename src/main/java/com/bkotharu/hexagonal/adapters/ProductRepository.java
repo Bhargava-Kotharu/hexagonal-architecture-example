@@ -24,8 +24,8 @@ public class ProductRepository implements IProductRepository {
 
 	@Override
 	public Product getProductById(Integer id) {
-		// return productsList.stream().fil
-		return productsList.get(0);
+
+		return productsList.stream().filter(p -> p.getId().equals(id)).findFirst().get();
 	}
 
 	@Override
